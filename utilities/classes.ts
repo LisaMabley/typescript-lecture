@@ -1,6 +1,6 @@
-import { UsState } from "./enums";
+import { Address, User } from "./types";
 
-export interface User {
+export class Customer implements User {
     id: string;
     firstName: string;
     lastName: string;
@@ -22,21 +22,18 @@ export interface User {
             personal: string;
             work: string;
         }
-    }, 
-}
+    }
 
+    constructor(user: NewUser) {
+        this.firstName = user.firstName;
+        this.lastName = user.lastName;
+    }
 
-export interface Address {
-    address1: string;
-    address2?: string | null;
-    city: string;
-    state: UsState;
-    zip: string;
-    timezone?: Timezone;
-}
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+  }
 
-
-export interface Timezone {
-    gmtOffset: number;
-    name: string;
-}
+  // Just created users won't have entered anything but their name 
+  // when their user record is first saved
+  export type NewUser = Pick<User, 'firstName' | 'lastName'>;

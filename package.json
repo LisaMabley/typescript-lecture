@@ -13,10 +13,14 @@
   "keywords": [
     "typescript"
   ],
+  "type": "module",
   "author": "Lisa Mabley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LisaMabley/typescript-lecture/issues"
   },
-  "homepage": "https://github.com/LisaMabley/typescript-lecture#readme"
+  "homepage": "https://github.com/LisaMabley/typescript-lecture#readme",
+  "dependencies": {
+    "typescript": "^5.1.3"
+  }
 }

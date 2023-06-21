@@ -1,5 +1,6 @@
-export const users = [
+export const userData = [
     {
+        id: 1,
         firstName: 'Lisa',
         lastName: 'Mabley',
         contact: {
@@ -19,6 +20,7 @@ export const users = [
         }, 
     },
     {
+        id: 2,
         firstName: 'Liz',
         lastName: 'Kerber',
         contact: {
