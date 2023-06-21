@@ -1,0 +1,22 @@
+{
+  "name": "typescript-lecture",
+  "version": "1.0.0",
+  "description": "Lecture code for Intro to TypeScript",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisaMabley/typescript-lecture.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Lisa Mabley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisaMabley/typescript-lecture/issues"
+  },
+  "homepage": "https://github.com/LisaMabley/typescript-lecture#readme"
+}
