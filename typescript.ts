@@ -16,6 +16,13 @@ let objVariable: NewUser = {
     lastName: 'Mabley',
 };
 
+// Variables cannot change types
+stringVariable = 23;
+intVariable = { numberOfLegs: 8, class: 'Cephalopoda' };
+boolVariable = 'true';
+objVariable = true;
+
+
 // Function definitions can have the arguments and return types defined
 // (but it's optional, so TS can be added to a codebase incrementally)
 
@@ -26,15 +33,14 @@ function returnDataTypeDescription(name: string, data): string {
 // If a function performs some action but doesn't return anything,
 // the return type is void
 
+// Generally, it's best practice to use datatypes that are as specific as possible 
+// Below, we expect the data param to be any number of types. We could type it these ways:
+// no type
+// any[]
+// string | boolean | number | object
 function logType(name: string, data: string | boolean | number | object): void {
     console.log(`${name} is a ${typeof data}`);
 }
-
-// Variables cannot change types
-stringVariable = 23;
-intVariable = { numberOfLegs: 8, class: 'Cephalopoda' };
-boolVariable = 'true';
-objVariable = true;
 
 
 // TS alerts us in the IDE when attributes don't exist
@@ -45,7 +51,7 @@ console.log(area);
 
 // TS alerts us when we attempt to do math with variables that aren't mathable
 const numCookies = 16;
-const people = [];
+const people = userData;
 let numCookiesPerPerson = numCookies / people;
 console.log('Cookies per person', numCookiesPerPerson);
 
@@ -62,8 +68,7 @@ console.log('Cookies per person', numCookiesPerPerson);
 const userHomeAddressTimezoneOffsets1 = userData.map(user => user?.contact?.address?.home?.timezone?.gmtOffset);
 console.log(userHomeAddressTimezoneOffsets1);
 
-// TS supports full object-oriented programming
+// TS supports full object-oriented-style programming
 // with classes
-
 const cust = new Customer(objVariable);
 console.log(cust.fullName)

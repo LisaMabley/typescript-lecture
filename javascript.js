@@ -44,6 +44,12 @@ boolVar = 'true';
 objVar = true;
 
 
+// The typing functionality TS provides is mainly to catch simple
+// errors as you write code, so you can focus on finding actual bugs
+// and not just typos
+
+// Here are some examples of the type of errors TS prevents
+
 // JS allows use of variables and attributes that don't exist
 const obj = { width: 10, height: 15 };
 const area = obj.width * obj.heigth;
@@ -52,7 +58,7 @@ console.log('Object area', area);
 
 // JS allows math operations with variables that aren't mathable
 const numCookies = 16;
-const people = [];
+const people = userData;
 let numCookiesPerPerson = numCookies / people;
 console.log('Cookies per person', numCookiesPerPerson);
 
