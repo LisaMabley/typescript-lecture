@@ -44,4 +44,8 @@ export class Customer implements User {
 
   // Just created users won't have entered anything but their name 
   // when their user record is first saved
+
+  // Pick is one of a number of TypeScript utility types
+  // that help us work with types in a more flexible way
+  // others are Partial, Omit
   export type NewUser = Pick<User, 'firstName' | 'lastName'>;

@@ -53,7 +53,7 @@ function logType(name: string, data: string | boolean | number | object): void {
 // TS alerts us in the IDE when attributes don't exist
 
 const obj = { width: 10, height: 15 };
-const area = obj.width * obj.heigth;
+const area = obj.width * obj.height;
 console.log(area);
 
 

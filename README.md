@@ -33,21 +33,22 @@ So, what are these amazing TypeScript features, and why do we need them?
 Run `npm i typescript` in your terminal OR add the JavaScript and TypeScript Nightly extension to your VS Code.
 
 ### Compiling your TypeScript to JavaScript
-Just run `tsc` in your terminal. Many compilation settings can be customized by adding a `tsconfig.json` file.
+Just run `tsc` in your terminal. Many compilation settings can be customized by adding a `tsconfig.json` file. 
+
+### Just for fun
+Find the deeply nested object and see how it compiled into JavaScript.
 
 ### Advantages
 
 * Reduces ambiguity, making collaboration easier
 * Supports and improves automated testing
-* Makes integration of third party libraries easier
+* Makes integration of third party libraries easier (because typing is clearer and more accessible in the IDE)
 
 ### Disadvantages
 
 * Slows down coding with additional type annotations to write
 * Adds additional compilation step
 * Adds extra complexity (another thing for devs to learn) — or does it just make the existing complexity more explicit?
-
-
 
 ## Questions?
 
