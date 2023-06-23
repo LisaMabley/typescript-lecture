@@ -22,42 +22,51 @@ let objVariable: NewUser = {
     lastName: 'Mabley',
 };
 
+
+// Variables cannot change types
+// stringVariable = 23;
+// intVariable = { numberOfLegs: 8, class: 'Cephalopoda' };
+// boolVariable = 'true';
+// objVariable = true;
+
+
 // Function definitions can have the arguments and return types defined.
 
 // If a variable is used to represent multiple types or the type is unknown, 
 // TypeScript assigns its default type: any.
+
 function returnDataTypeDescription(name: string, data: string | number | boolean | object): string {
     return `${name} is a ${typeof data}`;
 }
 
 // intVar = returnDataTypeDescription('', boolVar);
 
+
 // If a function performs some action but doesn't return anything,
 // the return type is void
+
 function logType(name: string, data: string | boolean | number | object): void {
     console.log(`${name} is a ${typeof data}`);
 }
 
-// Variables cannot change types
-stringVariable = 23;
-intVariable = { numberOfLegs: 8, class: 'Cephalopoda' };
-boolVariable = 'true';
-objVariable = true;
-
 
 // TS alerts us in the IDE when attributes don't exist
+
 const obj = { width: 10, height: 15 };
 const area = obj.width * obj.heigth;
 console.log(area);
 
 
 // TS alerts us when we attempt to do math with variables that aren't mathable
+
 const numCookies = 16;
-const people = [];
+const people = userData;
 let numCookiesPerPerson = numCookies / people;
 console.log('Cookies per person', numCookiesPerPerson);
 
+
 // TS alerts us when we attempt to send/receive the wrong datatype to/from a function
+
 function calculateNumberOfCookiesPerPerson(numCookies, numPeople) {
     return numCookies / numPeople;
 }
@@ -67,14 +76,24 @@ console.log('Cookies per person', numCookiesPerPerson);
 
 
 // TS offers optional chaining to avoid null reference errors in deeply nested objects
+
 const userHomeAddressTimezoneOffsets1 = userData.map(user => user?.contact?.address?.home?.timezone?.gmtOffset);
 console.log(userHomeAddressTimezoneOffsets1);
 
 
-// You'll notice based on usage that the data parameter in the function above 
-// represents several different types. Generally it's best practice to define 
+// --- BEST PRACTICES ---
+
+// When a variable could represent more than one different type, it's best practice to define 
 // datatypes as specifically as possible.
 
+// We could type it these ways:
+// - no type (evaluates to any)
+// - any (often not allowed, because why even use typescript if you don't want to define your types?)
+// - string | boolean | number | object
+// - generic <Type>
+
+
+// We can use custom interfaces to define specific types for our application.
 const allUsers: User[] = [];
 
 
