@@ -1,19 +1,18 @@
 import { userData } from './utilities/data.js';
 
 // To understand the typing advantages TypeScript brings,
-// it's useful to understand how types are handled in JS
+// it's useful to review how types are handled in JS
 
 // ---- TYPES IN JAVASCRIPT ----
 
-// We know about data types, because every column 
-// in our SQL database has an assigned type.
+// In our SQL database, every column has to have an assigned type.
 
-// JavaScript handles types for us, under the hood.
+// JavaScript, on the other hand, handles types for us under the hood.
 // We don't have to think about them very much.
 
-// When a variable is created, se don't need to specify what its type is
+// When a variable is created, we don't need to specify what its type is.
 // At runtime, JavaScript infers the type from usage: it looks at the values 
-// assigned to the variable and assigns a datatype based on that
+// assigned to that variable and assigns a datatype based on that
 let stringVar = "Hello, Diamond";
 let intVar = 42;
 let boolVar = false;
@@ -50,11 +49,12 @@ const area = obj.width * obj.heigth;
 console.log('Object area', area);
 
 
-// JS allows math operations with variables that aren't mathable
+// JS allows math operations with data types that aren't mathable
 const numCookies = 16;
-const people = [];
+const people = [{ name: 'Lisa'}, { name: 'Dane' }];
 let numCookiesPerPerson = numCookies / people;
 console.log('Cookies per person', numCookiesPerPerson);
+
 
 // JS allows us to send the wrong types as function params
 function calculateNumberOfCookiesPerPerson(numCookies, numPeople) {
@@ -64,11 +64,11 @@ function calculateNumberOfCookiesPerPerson(numCookies, numPeople) {
 numCookiesPerPerson = calculateNumberOfCookiesPerPerson(numCookies, people);
 console.log('Cookies per person', numCookiesPerPerson);
 
-// JS makes avoiding errors difficult when working with deeply nested objects
 
-// Oof. This doesn't work if any one user is missing any step in the path to the gmtOffset
+// JS makes avoiding errors difficult when working with deeply nested objects
 let userHomeAddressTimezoneOffsets = userData.forEach(user => user.contact.address.home.timezone.gmtOffset);
 console.log(userHomeAddressTimezoneOffsets);
+
 
 // This prevents the error ... but is this really the best way?
 const userHomeAddressTimezoneOffsets2 = [];
@@ -81,7 +81,7 @@ userData.forEach(user => {
         user.contact.address.home.timezone.gmtOffset) {
             userHomeAddressTimezoneOffsets2.push(user.contact.address.home.timezone.gmtOffset);
         } else {
-            console.error('User IDs missing timezone offset', user.id);
+            console.error(`User ID ${user.id} missing timezone offset`);
         }
 });
 console.log('User timezone offsets', userHomeAddressTimezoneOffsets2);
