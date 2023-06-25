@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Lecture code for Intro to TypeScript",
   "main": "javascript.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LisaMabley/typescript-lecture.git"
@@ -21,6 +18,8 @@
   },
   "homepage": "https://github.com/LisaMabley/typescript-lecture#readme",
   "dependencies": {
+    "@types/node": "^20.3.1",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
   }
 }

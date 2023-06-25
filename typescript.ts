@@ -2,12 +2,12 @@ import { Customer, NewUser } from "./utilities/classes";
 import userData from './utilities/data';
 import { User } from "./utilities/types";
 
-// --- HOW TO IMPLEMENT TYPES IN TYPESCRIPT ---
-
 // As we go through implementing types in this JavaScript, you'll see how
-// TypeScript helps us avoid the types of simple, common errors that can
-// drive us crazy and take up a lot of our time, so we can focus instead 
-// on finding actual bugs and solving the interesting problems.
+// TypeScript helps us catch these kinds of simple, common errors that can
+// take up a lot of time, so we can focus on finding actual bugs and solving 
+// interesting problems instead of just looking for typos.
+
+// --- HOW TO IMPLEMENT TYPES IN TYPESCRIPT ---
 
 // In TypeScript, we define types explicitly when we create a variable.
 // This is called 'static typing'.
@@ -39,6 +39,8 @@ function returnDataTypeDescription(name: string, data: string | number | boolean
     return `${name} is a ${typeof data}`;
 }
 
+// Because TypeScript understands the return type from this function
+// it won't allow us to assign it to a variable with a different type
 // intVar = returnDataTypeDescription('', boolVar);
 
 

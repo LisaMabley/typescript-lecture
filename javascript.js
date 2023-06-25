@@ -34,20 +34,26 @@ console.log(returnDataTypeDescription('objVar', objVar));
 
 
 // Variables can easily change types.
-// This could be convenient, and I suppose there are cases 
-// where a developer would do this on purpose ... but a lot
-// of the time it's because someone, somewhere, made a mistake.
 stringVar = 23;
 intVar = { numberOfLegs: 8, class: 'Cephalopoda' };
 boolVar = 'true';
 objVar = true;
 
+// Now, I'm sure if you need to do this, and you mean to do it,
+// then it's super convenient that JS allows you to do it.
 
-// The typing functionality TS provides is mainly to catch simple
-// errors as you write code, so you can focus on finding actual bugs
-// and not just typos
+// I'm probably the only one in this room that has ever 
+// reassigned a variable as a different datatype *by mistake*.
 
-// Here are some examples of the type of errors TS prevents
+// ---- ERRORS THAT ARE EASY TO MAKE IN JAVASCRIPT ----
+
+// That's just one of the simply errors that are really 
+// easy to make in JavaScript. Now I'm going to go through
+// a few more JavaScript ... I don't know if I should call 
+// them shortcomings ... but at least they're behaviors that
+// can often lead to errors. Then we'll have a nice baseline
+// to compare to the way TypeScript handles the same thing.
+
 
 // JS allows use of variables and attributes that don't exist
 const obj = { width: 10, height: 15 };
@@ -55,7 +61,7 @@ const area = obj.width * obj.heigth;
 console.log('Object area', area);
 
 
-// JS allows math operations with data types that aren't mathable
+// JS allows math operations with data types that aren't numbers
 const numCookies = 16;
 const people = [{ name: 'Lisa'}, { name: 'Dane' }];
 let numCookiesPerPerson = numCookies / people;

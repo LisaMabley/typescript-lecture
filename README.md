@@ -6,11 +6,15 @@ TypeScript is currently the 5th most commonly used coding language, after only J
 
 If you decide you want to learn TypeScript, I have some great news for you: you already know most of it.
 
-That’s because if JavaScript is your vanilla ice cream, TypeScript is the banana split: it’s just vanilla JavaScript with some additional functionality added on top, like whipped cream and chocolate sauce and sprinkles. TypeScript is a superset of JavaScript. All your existing JavaScript code will run in TypeScript, but you’ll also have typing tools to help you write more readable and maintainable code and catch errors more quickly.
+That’s because if JavaScript is your vanilla ice cream, TypeScript is the banana split: it’s just vanilla JavaScript with some additional functionality added on top, like whipped cream and chocolate sauce and sprinkles. 
 
-[Whiteboard Diagram]
+![Whiteboard Diagram](https://4.bp.blogspot.com/-pYn2LAUvMNQ/WtWXBIT2IRI/AAAAAAAACK8/n9pH7ikTpo4xqIl8odqkJ7kfnbfpcsbxACLcBGAs/s1600/typescript.png)
+
+
+TypeScript is a superset of JavaScript. All your existing JavaScript code will run in TypeScript, but you’ll also have typing tools to help you write more readable and maintainable code and catch errors more quickly.
 
 One part that might seem a little counter-intuitive is that TypeScript can’t run in your browser — it’s compiled down to JavaScript. So its sole purpose is to make the development process easier and more efficient; but at runtime, all the sprinkles are removed and it’s just plain JavaScript.
+
 
 ## JavaScript
 
@@ -27,6 +31,7 @@ So, what are these amazing TypeScript features, and why do we need them?
 
 [Code Demo]
 
+
 ## TypeScript
 
 ### Adding TypeScript to your Project
@@ -37,6 +42,9 @@ Just run `tsc` in your terminal. Many compilation settings can be customized by 
 
 ### Just for fun
 Find the deeply nested object and see how it compiled into JavaScript.
+
+
+## Conclusion
 
 ### Advantages
 
@@ -56,11 +64,11 @@ Find the deeply nested object and see how it compiled into JavaScript.
 
 If there is extra time:
 
-- External library support
-- Utility types
-- Generics
-- Classes
-- Debugging
+- External library support: Many npm packages supply types used along with code files
+- [Utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+- [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
+- [Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
+- [Debugging](https://code.visualstudio.com/docs/typescript/typescript-debugging)
 
 ## Documentation
 
