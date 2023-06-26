@@ -1,4 +1,4 @@
-import { userData } from './utilities/data.js';
+import { userData } from './data.js';
 
 // To understand the typing advantages TypeScript brings,
 // it's useful to review how types are handled in JS
@@ -21,7 +21,13 @@ let objVar = {
     lastName: 'Mabley', 
 };
 
-// This is called 'dynamic typing'.
+// This is often referred to as 'weak typing' or 'dynamic typing' or 'inferred typing'. 
+// However, there is a lot of disagreement about exactly what each of these terms mean,
+// so many writers who want to talk about this in an unambiguous way often refer to it
+// more as a spectrum, and talk about varying levels of 'type safety.'
+
+// (As I'm walking through this code, feel free to raise your hand and ask questions
+// if at any point I go to fast and I lose you.)
 
 function returnDataTypeDescription(name, data) {
     return `${name} is a ${typeof data}`;

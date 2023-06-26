@@ -29,6 +29,8 @@ But some of these benefits can become shortcomings once the applications we are 
 
 So, what are these amazing TypeScript features, and why do we need them?
 
+To run the code in `javascript.js`, enter `node javascript.js` in your terminal.
+
 [Code Demo]
 
 
@@ -36,6 +38,8 @@ So, what are these amazing TypeScript features, and why do we need them?
 
 ### Adding TypeScript to your Project
 Run `npm i typescript` in your terminal OR add the JavaScript and TypeScript Nightly extension to your VS Code.
+
+To run the code in `typescript.ts`, enter `npx ts-node typescript.ts --esm` in your terminal.
 
 ### Compiling your TypeScript to JavaScript
 Just run `tsc` in your terminal. Many compilation settings can be customized by adding a `tsconfig.json` file. 

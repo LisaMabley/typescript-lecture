@@ -1,6 +1,11 @@
 {
     "compilerOptions": {
-      "outDir": "dist"
+      "outDir": "dist",
+      "module": "ES6",
+      "target":"ES6",
     },
-    "include": ["**/*.ts", "utilities/data.js"],
+    "include": ["**/*.ts", "data.js"],
+    "ts-node": {
+      "esm": true,   
+    }, 
 }

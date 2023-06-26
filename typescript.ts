@@ -1,6 +1,6 @@
-import { Customer, NewUser } from "./utilities/classes";
-import userData from './utilities/data';
+import { userData } from './data.js';
 import { User } from "./utilities/types";
+// import { Customer, NewUser } from "./utilities/classes";
 
 // As we go through implementing types in this JavaScript, you'll see how
 // TypeScript helps us catch these kinds of simple, common errors that can
@@ -10,14 +10,16 @@ import { User } from "./utilities/types";
 // --- HOW TO IMPLEMENT TYPES IN TYPESCRIPT ---
 
 // In TypeScript, we define types explicitly when we create a variable.
-// This is called 'static typing'.
+// This can sometimes be called 'static typing,' or 'strong typing,' 
+// or 'manifest typing.' But it's probably most accurate to say that 
+// TypeScript increases the 'type safety' of JavaScript.
 
 // Each variable can be assigned an optional datatype when it is created.
 // Because it's optional, TS can be added incrementally to a JavaScript codebase.
 let stringVariable: string = "Hello, JavaScript";
 let intVariable: number = 42;
 let boolVariable: boolean = false;
-let objVariable: NewUser = {
+let objVariable: { firstName: string, lastName: string } = {
     firstName: 'Lisa',
     lastName: 'Mabley',
 };
@@ -63,7 +65,7 @@ console.log(area);
 
 const numCookies = 16;
 const people = userData;
-let numCookiesPerPerson = numCookies / people;
+let numCookiesPerPerson = numCookies / people.length;
 console.log('Cookies per person', numCookiesPerPerson);
 
 
@@ -73,7 +75,7 @@ function calculateNumberOfCookiesPerPerson(numCookies, numPeople) {
     return numCookies / numPeople;
 }
 
-numCookiesPerPerson = calculateNumberOfCookiesPerPerson(numCookies, people);
+numCookiesPerPerson = calculateNumberOfCookiesPerPerson(numCookies, people.length);
 console.log('Cookies per person', numCookiesPerPerson);
 
 
@@ -100,8 +102,8 @@ const allUsers: User[] = [];
 
 
 // TS supports full object-oriented programming with classes
-const cust: Customer = new Customer(objVariable);
-console.log(cust.fullName)
+// const cust: Customer = new Customer(objVariable);
+// console.log(cust.fullName)
 
 
 // Refer to the readme for info on installing and compiling TypeScript

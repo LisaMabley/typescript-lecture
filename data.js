@@ -5,6 +5,7 @@ export const userData = [
         lastName: 'Mabley',
         contact: {
             address: {
+                work: null,
                 home: {
                     address1: '122 Main Street',
                     address2: null,
@@ -16,6 +17,7 @@ export const userData = [
                         name: 'CDT',
                     },
                 },
+                mailing: null,
             },
         }, 
     },
@@ -32,6 +34,8 @@ export const userData = [
                     state: 'Mn',
                     zip: 55413,
                 },
+                home: null,
+                mailing: null,
             },
         }, 
     }
