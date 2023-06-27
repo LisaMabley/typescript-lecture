@@ -2,20 +2,27 @@ import { userData } from './data.js';
 import { User } from "./utilities/types";
 // import { Customer, NewUser } from "./utilities/classes";
 
+// ---- INSTALLING TYPESCRIPT ----
+
+// To add typescript to your project, run `npm i typescript` in your terminal.
+// TypeScript starts working right away on all the files in your project.
+// If you want to implement custom settings, you can define those in a file
+// named tsconfig.json.
+
+
+// ---- IMPLEMENTING TYPES IN TYPESCRIPT ----
+
 // As we go through implementing types in this JavaScript, you'll see how
 // TypeScript helps us catch these kinds of simple, common errors that can
 // take up a lot of time, so we can focus on finding actual bugs and solving 
 // interesting problems instead of just looking for typos.
 
-// --- HOW TO IMPLEMENT TYPES IN TYPESCRIPT ---
+// In TypeScript, types are handled with what's called 'static typing,'
+// or 'strong typing', or 'manifest typing'. But it's probably most 
+// accurate to say that TypeScript increases the 'type safety' of JavaScript.
 
-// In TypeScript, we define types explicitly when we create a variable.
-// This can sometimes be called 'static typing,' or 'strong typing,' 
-// or 'manifest typing.' But it's probably most accurate to say that 
-// TypeScript increases the 'type safety' of JavaScript.
-
-// Each variable can be assigned an optional datatype when it is created.
-// Because it's optional, TS can be added incrementally to a JavaScript codebase.
+// In TypeScript, we can define types explicitly when we create a variable.
+// This is optional, so TS can be added incrementally to a JavaScript codebase.
 let stringVariable: string = "Hello, JavaScript";
 let intVariable: number = 42;
 let boolVariable: boolean = false;
@@ -85,17 +92,19 @@ const userHomeAddressTimezoneOffsets1 = userData.map(user => user?.contact?.addr
 console.log(userHomeAddressTimezoneOffsets1);
 
 
-// --- BEST PRACTICES ---
+// ---- BEST PRACTICES ----
 
 // When a variable could represent more than one different type, it's best practice to define 
 // datatypes as specifically as possible.
 
-// We could type it these ways:
+// In the data type functions on lines 44 and 56 above, we could type the data attribute in these ways:
 // - no type (evaluates to any)
 // - any (often not allowed, because why even use typescript if you don't want to define your types?)
 // - string | boolean | number | object
 // - generic <Type>
 
+
+// ---- INTERFACES AND CLASSES IN TYPESCRIPT ----
 
 // We can use custom interfaces to define specific types for our application.
 const allUsers: User[] = [];
@@ -106,4 +115,8 @@ const allUsers: User[] = [];
 // console.log(cust.fullName)
 
 
-// Refer to the readme for info on installing and compiling TypeScript
+// ---- COMPILING TYPESCRIPT TO JAVASCRIPT ----
+
+// Just run `tsc` in your terminal. Many compilation settings can be customized by adding a `tsconfig.json` file. 
+
+// Just for fun, see if you can find the deeply nested object and see how it compiled into JavaScript.

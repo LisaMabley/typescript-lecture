@@ -27,7 +27,7 @@ let objVar = {
 // more as a spectrum, and talk about varying levels of 'type safety.'
 
 // (As I'm walking through this code, feel free to raise your hand and ask questions
-// if at any point I go to fast and I lose you.)
+// if at any point I go to fast or I lose you.)
 
 function returnDataTypeDescription(name, data) {
     return `${name} is a ${typeof data}`;
