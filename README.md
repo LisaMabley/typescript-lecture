@@ -80,8 +80,3 @@ If there is extra time:
 * Adds extra complexity to code (and another thing for devs to learn) — or does it just make the existing complexity more explicit?
 
 ## Questions?
-
-
-## Enjoy Working With TypeScript!
-
-![](https://i.giphy.com/media/l41lJLKvR4ztPZDwY/giphy.webp)
