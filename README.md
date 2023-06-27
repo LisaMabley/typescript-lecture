@@ -1,5 +1,13 @@
 # Intro to Typescript
 
+## Your JavaScript Code
+
+![](https://i.giphy.com/media/XbmdBop1Fn6J3dT6U6/giphy.webp)
+
+## Your TypeScript Code
+
+![](https://i.giphy.com/media/XE1YGqnvzMV769JTdI/giphy.webp)
+
 Good morning! Today is your lucky day, because I am going to tell you about my favorite programming language, TypeScript.
 
 TypeScript is currently the 5th most commonly used coding language, after only JavaScript, HTML, SQL and Python. In the 2023 Stack Overflow Developer Survey, more than 43% of professional developers said they use TypeScript.
