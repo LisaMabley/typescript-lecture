@@ -1,10 +1,10 @@
 export enum UserRole {
-    Owner = 'Owner',
-    Admin = 'Administrator',
-    Mod = 'Moderator',
-    Premium = 'Premium Member',
-    Member = 'Member',
-    Guest = 'Guest',
+    owner = 'Owner',
+    admin = 'Administrator',
+    mod = 'Moderator',
+    premium = 'Premium Member',
+    member = 'Member',
+    guest = 'Guest',
 }
 
 export enum UsState {

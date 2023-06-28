@@ -1,13 +1,17 @@
 # Intro to Typescript
 
+
 ## Your JavaScript Code
 
 ![](https://i.giphy.com/media/XbmdBop1Fn6J3dT6U6/giphy.webp)
+
 
 ## Your TypeScript Code
 
 ![](https://i.giphy.com/media/XE1YGqnvzMV769JTdI/giphy.webp)
 
+
+## Introduction
 Good morning! Today is your lucky day, because I am going to tell you about my favorite programming language, TypeScript.
 
 TypeScript is currently the 5th most commonly used coding language, after only JavaScript, HTML, SQL and Python. In the 2023 Stack Overflow Developer Survey, more than 43% of professional developers said they use TypeScript. ([source](https://survey.stackoverflow.co/2023/#section-most-popular-technologies-programming-scripting-and-markup-languages))
@@ -67,16 +71,17 @@ If there is extra time:
 
 ## Conclusion
 
+### Disadvantages of TypeScript
+
+* Slows down coding with additional type annotations to write
+* Adds additional compilation step
+* Adds extra complexity to code (and another thing for devs to learn) — or does it just make the existing complexity more explicit?
+
 ### Advantages of TypeScript
 
 * Reduces ambiguity, making collaboration easier
 * Supports and improves automated testing
 * Makes integration of third party libraries easier (because typing is clearer and more accessible in the IDE)
 
-### Disadvantages of TypeScript
-
-* Slows down coding with additional type annotations to write
-* Adds additional compilation step
-* Adds extra complexity to code (and another thing for devs to learn) — or does it just make the existing complexity more explicit?
 
 ## Questions?

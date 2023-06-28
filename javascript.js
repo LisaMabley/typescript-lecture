@@ -1,7 +1,7 @@
 import { userData } from './data.js';
 
 // To understand the typing advantages TypeScript brings,
-// it's useful to review how types are handled in JS
+// it's first useful to review how types are handled in JS
 
 // ---- TYPES IN JAVASCRIPT ----
 
@@ -51,14 +51,21 @@ objVar = true;
 // I'm probably the only one in this room that has ever 
 // reassigned a variable as a different datatype *by mistake*.
 
+
 // ---- ERRORS THAT ARE EASY TO MAKE IN JAVASCRIPT ----
 
 // That's just one of the simply errors that are really 
-// easy to make in JavaScript. Now I'm going to go through
-// a few more JavaScript ... I don't know if I should call 
-// them shortcomings ... but at least they're behaviors that
-// can often lead to errors. Then we'll have a nice baseline
-// to compare to the way TypeScript handles the same thing.
+// easy to make in JavaScript. 
+
+// So now I'm going to go through a few more JavaScript ... 
+// I don't know if I should call them shortcomings ... 
+// but at least they're behaviors that can often lead to 
+// errors. Then we'll see how to implement TypeScript in 
+// an existing JavaScript file. As we go through that, 
+// you'll see how TypeScript helps us catch these kinds of 
+// simple, common errors that can take up a lot of time, 
+// so we can focus on finding actual bugs and solving 
+// interesting problems instead of just looking for typos.
 
 
 // JS allows use of variables and attributes that don't exist

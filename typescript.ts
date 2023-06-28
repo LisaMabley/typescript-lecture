@@ -1,6 +1,5 @@
 import { userData } from './data.js';
 import { User } from "./utilities/types";
-// import { Customer, NewUser } from "./utilities/classes";
 
 // ---- INSTALLING TYPESCRIPT ----
 
@@ -11,11 +10,6 @@ import { User } from "./utilities/types";
 
 
 // ---- IMPLEMENTING TYPES IN TYPESCRIPT ----
-
-// As we go through implementing types in this JavaScript, you'll see how
-// TypeScript helps us catch these kinds of simple, common errors that can
-// take up a lot of time, so we can focus on finding actual bugs and solving 
-// interesting problems instead of just looking for typos.
 
 // In TypeScript, types are handled with what's called 'static typing,'
 // or 'strong typing', or 'manifest typing'. But it's probably most 
@@ -106,13 +100,10 @@ console.log(userHomeAddressTimezoneOffsets1);
 
 // ---- INTERFACES AND CLASSES IN TYPESCRIPT ----
 
-// We can use custom interfaces to define specific types for our application.
+// We can use interfaces to create custom define specific types for our application.
 const allUsers: User[] = [];
 
-
-// TS supports full object-oriented programming with classes
-// const cust: Customer = new Customer(objVariable);
-// console.log(cust.fullName)
+// TypeScript supports full object-oriented programming.
 
 
 // ---- COMPILING TYPESCRIPT TO JAVASCRIPT ----
