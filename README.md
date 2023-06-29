@@ -1,16 +1,5 @@
 # Intro to Typescript
 
-
-## Your JavaScript Code
-
-![](https://i.giphy.com/media/XbmdBop1Fn6J3dT6U6/giphy.webp)
-
-
-## Your TypeScript Code
-
-![](https://i.giphy.com/media/XE1YGqnvzMV769JTdI/giphy.webp)
-
-
 ## Introduction
 
 Good morning! Today is your lucky day, because I am going to tell you about my favorite programming language, TypeScript.
@@ -84,6 +73,15 @@ To run the code in `typescript.ts`, enter `npx ts-node typescript.ts --esm` in y
 ## Conclusion
 
 I hope that this introduction has piqued your interest in TypeScript, and that you'll consider trying it out it in one of your upcoming projects. 
+
+### Your JavaScript Code
+
+![](https://i.giphy.com/media/XbmdBop1Fn6J3dT6U6/giphy.webp)
+
+
+### Your TypeScript Code
+
+![](https://i.giphy.com/media/XE1YGqnvzMV769JTdI/giphy.webp)
 
 
 ## Questions?
