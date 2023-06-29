@@ -1,24 +1,29 @@
-import { UsState } from "./enums";
+import { UsState, UserRole } from "./enums";
 
 export interface User {
     id: string;
     firstName: string;
     lastName: string;
-    contact: {
-        address: {
-            home: Address | null;
-            work: Address | null;
-            mailing: Address | null;
+    // It is best practice to specify when a value might be undefined.
+    // This key will definitely be there, but the value might be undefined.
+    role: UserRole | undefined;
+    contactInformation: {
+        addresses: {
+            // ... or when it might be null.
+            // Note that we can reference other interfaces within this one.
+            homeAddress: Address | null;
+            workAddress: Address | null;
         },
-        phone?: {
-            home: string;
+        // A question mark indicates that the entire property is optional.
+        // So forget about the value, this key might not even be there.
+        phoneNumbers?: {
             work: string;
             mobile: {
                 number: string;
                 acceptsSms: boolean;
             };
         },
-        email?: {
+        emailAddresses?: {
             personal: string;
             work: string;
         }
@@ -30,9 +35,9 @@ export interface Address {
     address1: string;
     address2?: string | null;
     city: string;
-    state: UsState;
+    state: UsState; // See enums file
     zip: string;
-    timezone?: Timezone;
+    timezone?: Timezone; // See below
 }
 
 
@@ -41,10 +46,18 @@ export interface Timezone {
     name: string;
 }
 
-  // Just created users won't have entered anything but their name 
-  // when their user record is first saved
+// ---- UTILITY TYPES ----
 
-  // Pick is one of a number of TypeScript utility types
-  // that help us work with types in a more flexible way.
-  // Some others are Partial, Omit
-  export type NewUser = Pick<User, 'firstName' | 'lastName'>;
+// PARTIAL
+// Sets all properties to optional
+export type UserAccountFormInProgress = Partial<User>;
+
+// OMIT
+// Excludes specified properties
+export type UnsavedUser = Omit<User, "id">;
+
+// PICK
+// Includes only specified properties
+export type UserPreview = Pick<User, 'firstName' | 'lastName' | 'role'>;
+
+// These are just a few of TypeScript's useful utility types.
