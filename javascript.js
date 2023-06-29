@@ -105,6 +105,3 @@ userData.forEach(user => {
         }
 });
 console.log('User timezone offsets', userHomeAddressTimezoneOffsets2);
-
-// TODO: remove this comment
-// Note to self: No need to mention tsconfig at this point

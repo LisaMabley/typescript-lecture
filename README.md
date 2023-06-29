@@ -40,20 +40,6 @@ So, let's take a closer look at these features TypeScript adds.
 [Code Demo]
 
 
-## Official TypeScript Documentation
-
-TypeScript's official [Getting Started Guide](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html)
-
-
-## Running these files
-
-To run the code in `javascript.js`, enter `node javascript.js` in your terminal.
-
-In this project, I added a library called `ts-node` to allow me to run the typescript file from my terminal.
-
-To run the code in `typescript.ts`, enter `npx ts-node typescript.ts --esm` in your terminal.
-
-
 ## TypeScript Disadvantages
 
 * Slows down coding with additional type annotations to write
@@ -96,3 +82,25 @@ If there is extra time:
 - [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
 - [Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
 - [Debugging](https://code.visualstudio.com/docs/typescript/typescript-debugging)
+
+
+## Running these files
+
+To run the code in `javascript.js`, enter `node javascript.js` in your terminal.
+
+In this project, I added a library called `ts-node` to allow me to run the typescript file from my terminal.
+
+To run the code in `typescript.ts`, enter `npx ts-node typescript.ts --esm` in your terminal.
+
+
+## Resources and Documentation
+
+TypeScript's official [Getting Started Guide](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html)
+
+TypeScript/React [Cheatsheets](https://github.com/typescript-cheatsheets/react)
+
+Udemy [Understanding TypeScript Course](https://www.udemy.com/course/understanding-typescript/?ranMID=39197&ranEAID=k*VTdGlCbXg&ranSiteID=k.VTdGlCbXg-mhoHMZhbQmusOa6PU_hbEA&LSNPUBID=k*VTdGlCbXg)
+
+TypeScript/React [Guided Project](https://www.coursera.org/projects/rudi-hinds-typescript-react-get-started) on Coursera
+
+There are no official Microsoft certifications specifically for TypeScript.
