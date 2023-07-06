@@ -37,7 +37,15 @@ overcome these shortcomings, while still retaining the best things about JavaScr
 
 So, let's take a closer look at these features TypeScript adds.
 
-[Code Demo]
+## Code Demo
+
+To read through this demo, look first at the `README.md`.
+
+Then take a look at `javascript.js` to learn a bit about how JavaScript handles types.
+
+Then look at `typescript.ts` to see the same file with type annotations added.
+
+An example of a more complicated custom type is defined in `utilities/types.ts`.
 
 
 ## TypeScript Disadvantages
